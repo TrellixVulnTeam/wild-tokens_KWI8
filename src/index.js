@@ -1,1 +1,1 @@
-alert('ok')
+import css from "./app.css";
