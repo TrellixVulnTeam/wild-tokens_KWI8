@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "style-dictionary": "style-dictionary build"
+    "build": "git pull && style-dictionary build && webpack"
   },
   "keywords": [],
   "author": "",

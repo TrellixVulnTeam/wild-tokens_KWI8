@@ -3,4 +3,12 @@
 
 body{
     background: $global-primary;
+    text-align: center;
+}
+
+h1{
+    font-family: sans-serif;
+    margin: auto;
+    display: block;
+    color: $global-secondary;
 }
