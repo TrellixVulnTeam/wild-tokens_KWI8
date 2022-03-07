@@ -4,11 +4,22 @@
 body{
     background: $global-primary;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    font-family: sans-serif;
-    margin: auto;
-    display: block;
-    color: $global-secondary;
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    h1{
+        font-family: sans-serif;
+        display: block;
+        color: $global-secondary;
+        font-size: 30vw;
+        font-weight: 900;
+    }
 }
