@@ -5,16 +5,18 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "token-transformer src/tokens.json src/tokens-transformed.json global, webpack"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@epegzz/sass-vars-loader": "^6.1.0",
     "css-loader": "^6.7.0",
     "node-sass": "^7.0.1",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
+    "token-transformer": "0.0.19",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2"
   }
