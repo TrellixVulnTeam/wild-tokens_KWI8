@@ -1,8 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import 'scss/variables';
+
 
 body{
-    background-color: $primary;
+    background: $global-primary;
 }

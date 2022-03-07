@@ -8,28 +8,13 @@ module.exports = {
   },
   module: {
     rules: [{
-        test:/\.s[ac]ss$/i,
-        use: [
-          // Inserts all imported styles into the html document
-          { loader: "style-loader" },
-  
-          // Translates CSS into CommonJS
-          { loader: "css-loader" },
-  
-          // Compiles Sass to CSS
-          { loader: "sass-loader"},
-  
-          // Reads Sass vars from files or inlined in the options property
-          { loader: "@epegzz/sass-vars-loader", options: {
-            syntax: 'scss',
-            files: [
-              path.resolve(__dirname, 'src/tokens-transformed.json')
-            ]
-          }
-          }]
-      }]
-    },
-    resolve: {
+        test: /\.(s(a|c)ss)$/,
+        use: ['style-loader','css-loader', 'sass-loader']
+     }]
+   
+      },
+
+  resolve: {
         extensions: ['*', '.js']
     },
-};
+}
